@@ -28,7 +28,9 @@ public class C03_NavigateMethods {
         //Son olarak sayfayi yenileyelim ve sayfayi kapatalim
         driver.navigate().refresh();
         driver.close();
-        // Not: Sayfalar arasi gecisler hizli olacagindan 3 sn gecisler icin bekletelim
+        //  Sayfalar arasi gecisler hizli olacagindan 3 sn gecisler icin bekletelim
+
+        //q
 
     }
 }
