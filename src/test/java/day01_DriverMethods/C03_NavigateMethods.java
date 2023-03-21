@@ -30,7 +30,7 @@ public class C03_NavigateMethods {
         driver.close();
         //  Sayfalar arasi gecisler hizli olacagindan 3 sn gecisler icin bekletelim
 
-        //q
+
 
     }
 }
