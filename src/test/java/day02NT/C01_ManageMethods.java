@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class C01_ManageMethods {
 
     public static void main(String[] args) throws InterruptedException {
-//       System.setProperty("webdriver.chrom.driver","src/resources/drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrom.driver","src/resources/drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver(new ChromeOptions().addArguments("--remote-allow-origins=*"));
 
         System.out.println("Sayfa Konumu" + driver.manage().window().getPosition());

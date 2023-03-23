@@ -50,19 +50,28 @@ public class C01_Example {
         if(actualURL.equals(expectedURL)){
             System.out.println("\"Url test PASSED\" = " + "Url test PASSED");
         }else{
-            System.out.println("\"Url test FAILD\" = " + "Url test FAILD");
+            System.out.println("\"Url test FAILED\" = " + "Url test FAILD");
         }
 //         Sayfanın konumunu ve boyutunu yazdırın
-        System.out.println("driver.manage().window().getPosition() = " + driver.manage().window().getPosition());
-        System.out.println("driver.manage().window().getSize() = " + driver.manage().window().getSize());
+
+        driver.manage().window().maximize();
+        System.out.println("Maximum  " + driver.manage().window().getPosition());
+        System.out.println( "Maximum Size " + driver.manage().window().getSize());
 //         Sayfanın konumunu ve boyutunu istediğimiz şekilde ayarlıyın
+
+        driver.manage().window().fullscreen();
+        System.out.println("Full Screen  " + driver.manage().window().getPosition());
+        System.out.println( "Full Screen Size " + driver.manage().window().getSize());
+
+
+
 
            driver.manage().window().setPosition(new Point(100,100));
            driver.manage().window().setSize(new Dimension(600,600));
 //         İstediğiniz şekilde olup olmadığını test edin
 
         Point actualPosition =driver.manage().window().getPosition();
-if(actualPosition.x==50 && actualPosition.y==50){
+      if(actualPosition.x==50 && actualPosition.y==50){
 
     System.out.println("\"Konum testi PASSED\" = " + "Konum testi PASSED");
 }else {

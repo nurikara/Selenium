@@ -13,6 +13,7 @@ public class C03_WebelementLocators {
 
     public static void main(String[] args) {
         System.setProperty("webdriver.edge.driver","src/resources/drivers/msedgedriver.exe");
+
         WebDriver driver = new ChromeDriver(new ChromeOptions().addArguments("--remote-allow-origins=*"));
 
         driver.manage().window().maximize();
