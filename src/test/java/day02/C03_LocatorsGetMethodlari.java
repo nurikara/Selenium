@@ -40,8 +40,8 @@ Sayfayı kapatın
         System.out.println("aramaSonucu = " + aramaSonucu.getText());
 
 //          Sayfayı kapatın
-        driver.close();
-
+//        driver.close();
+//
 
     }
 }
