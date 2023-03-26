@@ -22,10 +22,10 @@ public class C02_WebElementAndLocater {
      */
 
     public static void main(String[] args) {
-        System.setProperty("webdriver.edge.driver","src/resources/drivers/msedgedriver.exe");
+        System.setProperty("webdriver.edge.driver", "src/resources/drivers/msedgedriver.exe");
         WebDriver driver = new ChromeDriver(new ChromeOptions().addArguments("--remote-allow-origins=*"));
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 //        Amazon sayfasına gidin
     driver.get("https://amazon.com");
 //        Search kutusunu locate edin
