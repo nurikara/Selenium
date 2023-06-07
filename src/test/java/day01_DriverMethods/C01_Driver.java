@@ -1,15 +1,29 @@
 package day01_DriverMethods;
 
 import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+
+
+
 import org.openqa.selenium.edge.EdgeDriver;
 
-public class C01_Driver {
+public class C01_Driver  {
 
     public static void main(String[] args) {
+
         System.setProperty("webdriver.edge.driver","src/resources/drivers/msedgedriver.exe");
         WebDriver driver = new ChromeDriver(new ChromeOptions().addArguments("--remote-allow-origins=*"));
+
+
+
+        System.setProperty("web-driver.edge.driver","src/resources/drivers/msedgedriver.exe");
+        //WebDriver driver = new ChromeDriver(new ChromeOptions().addArguments("--remote-allow-origins=*"));
+
+
+        WebDriver driver = new EdgeDriver() ;
+        driver.get("https://www.techproeducation.com/");
 
 
        // System.setProperty("edgeDriver","src/resources/driver/msedgedriver.exe");

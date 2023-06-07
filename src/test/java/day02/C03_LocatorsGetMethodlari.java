@@ -44,6 +44,8 @@ Sayfayı kapatın
 
 //          Sayfayı kapatın
 
+//        driver.close();
+//
 
 
     }
